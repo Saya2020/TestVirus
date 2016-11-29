@@ -1,2 +1,2 @@
 # TestVirus
-A small harmless virus transmitted through portable drives. Nothing more than that.
+A couple of small harmless viruses transmitted through portable drives. Nothing more than that.
