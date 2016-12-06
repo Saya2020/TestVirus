@@ -5,7 +5,7 @@
 
 using namespace std;
 
-char msg[] = "Karma is a cunt sometimes... This time it was even more of a cunt";
+char msg[] = "Karma is an idiot sometimes... This time it was even more of a idiot";
 
 int isWindows = 0;
 int isApple   = 0;
